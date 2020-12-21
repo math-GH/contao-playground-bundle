@@ -1,0 +1,53 @@
+{
+    "name": "mathContao/contao-playground-bundle",
+    "description": "Just4Fun Just2learn",
+    "keywords": [
+        "contao",
+        "bundle",
+        "tag 3",
+        "tag 4"
+    ],
+    "type": "contao-bundle",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "µaTh",
+            "email": "geheim@web.de",
+            "homepage": "https://github.com/mathContao",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/mathContao/contao-playground-bundle/issues",
+        "source": "https://github.com/mathContao/contao-playground-bundle"
+    },
+    "require": {
+        "contao/core-bundle": "^4.9"
+    },
+    "require-dev": {
+        "contao/easy-coding-standard": "^3.0",
+        "contao/manager-plugin": "^2.3",
+        "contao/test-case": "^4.0",
+        "phpunit/phpunit": "^8.4",
+        "symfony/http-client": "4.4.*",
+        "symfony/phpunit-bridge": "4.4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "MathContao\\ContaoPlaygroundBundle\\": "src/"
+        },
+        "classmap": [
+            "src/Resources/contao"
+        ],
+        "exclude-from-classmap": [
+            "src/Resources/contao/config",
+            "src/Resources/contao/dca",
+            "src/Resources/contao/languages",
+            "src/Resources/contao/templates"
+        ]
+    },
+    "extra": {
+        "contao-manager-plugin": "MathContao\\ContaoPlaygroundBundle\\ContaoManager\\Plugin"
+    },
+    "version": "0.0.1"
+}
