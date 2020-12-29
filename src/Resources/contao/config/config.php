@@ -12,12 +12,21 @@
 
 use MathContao\ContaoPlaygroundBundle\Model\PlaygroundModel;
 
+
+// Hooks
+$GLOBALS['TL_HOOKS']['getUserNavigation'][] = ['eikona_media.contao.system_information.listener.navigation', 'onGetUserNavigation'];
+
+
+
+
 /**
  * Backend modules
  */
 $GLOBALS['BE_MOD']['playground_cat']['playground_type'] = array(
     'tables' => array('tl_playground')
 );
+$GLOBALS['BE_MOD']['playground_cat']['testpage'] = [];
+
 
 /**
  * Models
