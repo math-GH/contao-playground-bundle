@@ -48,6 +48,5 @@
     },
     "extra": {
         "contao-manager-plugin": "MathContao\\ContaoPlaygroundBundle\\ContaoManager\\Plugin"
-    },
-    "version": "0.0.1"
+    }
 }
